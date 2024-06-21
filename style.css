@@ -22,9 +22,9 @@ body {
 }
 
 .photo {
-    width: 100px;
-    height: 100px;
-    background: yellowgreen;
+    width: 150px;
+    height: 200px;
+    background: url(./img/IMG_2628.jpg) center/cover;
     margin: 0 auto;
 }
 
@@ -53,7 +53,7 @@ p {
 }
 
 .photo-container::after {
-    bottom: -35%;
+    bottom: -25%;
 }
 
 .infos::after {
