@@ -7,7 +7,9 @@
 }
 
 body {
-    width: 1500px;
+    max-width: 1500px;
+    min-width: 1000px;
+    width: 90%;
     min-height: 100vh;
     margin: 0 auto;
     border: 1px solid black;
@@ -118,7 +120,6 @@ li::marker {
 
 .banniere h2 {
     transform: rotate(-90deg);
-    background: lightcyan;
 }
 
 .metier-container {
