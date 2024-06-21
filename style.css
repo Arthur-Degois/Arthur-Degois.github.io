@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 1500px;
+    min-height: 100vh;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    border-bottom: 1px solid black;
+}
+
+.photo {
+    width: 100px;
+    height: 100px;
+    background: yellowgreen;
+    margin: 0 auto;
+}
+
+.infos-perso {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgb(164, 190, 245);
+}
+
+p {
+    margin: 5px;
+}
+
+.trait {
+    position: relative;
+}
+
+.trait::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: 1px solid lightgrey;
+    transform: translate(-50%);
+    bottom: -20%;
+}
+
+.photo-container::after {
+    bottom: -35%;
+}
+
+.infos::after {
+    bottom: -40%;
+}
+
+.title {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.resumer {
+    margin: 30px;
+}
+
+.resumer p {
+    text-align: left;
+    line-height: 22px;
+}
+
+h2 {
+    padding: 20px;
+}
+
+.infos-etude h2 {
+    background: lightcyan;
+    border-radius: 15px;
+}
+
+.rubrique {
+    margin: 30px;
+}
+
+.rubrique ul {
+    margin: 30px;
+}
+
+ul li {
+    text-align: left;
+    margin: 10px;
+}
+
+li::marker {
+    color: red;
+}
+
+.experiences {
+    width: 80%;
+    margin: 0 auto 50px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    border: 1px solid black;
+}
+
+.banniere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightcyan;
+    border-right: 1px solid black;
+}
+
+.banniere h2 {
+    transform: rotate(-90deg);
+    background: lightcyan;
+}
+
+.metier-container {
+    display: flex;
+    align-items: center;
+}
+
+.metier {
+    font-weight: 500;
+}
+
+.square {
+    width: 10px;
+    height: 10px;
+    border: 1px solid red;
+    border-right: 2px solid red;
+    border-bottom: 2px solid red;
+    margin-right: 20px;
+}
+
+.liste {
+    margin: 10px;
+}
+
+.liste ul li {
+    list-style: square;
+    font-size: 0.8rem;
+    margin-left: 20px;
+}
+
+.liste ul li::marker {
+    color: black;
+}
