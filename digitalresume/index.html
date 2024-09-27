@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CV Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <a href="#home"><li>Home</li></a>
+        <a href="#profil"><li>Profil</li></a>
+        <a href="#competence"><li>Compétences</li></a>
+        <a href="#projet"><li>Projets</li></a>
+        <a href="#contact"><li>Contact</li></a>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="home size" id="home">
+        <div class="center">
+          <h1>Bienvenue</h1>
+          <p>dans mon</p>
+          <p>MONDE !</p>
+        </div>
+      </div>
+      <div class="profil size" id="profil">
+        <h2 class="title">Profil</h2>
+        <div class="center">
+          <div class="main">
+            <div class="profil-card box">
+              <div class="img">
+                <img src="./img/profil-picture.png" alt="photo de moi" />
+              </div>
+              <p>Arthur</p>
+              <p>DEGOIS</p>
+              <p>29 ans</p>
+              <p>Issy-Les-Moulineaux</p>
+              <p>arthur.degois@epitech.eu</p>
+              <p>06 66 28 32 79</p>
+            </div>
+            <div class="info box">
+              <div class="propos">
+                <h3>A propos de moi</h3>
+                <p>
+                  Je m'appelle Arthur, je suis en formation a l'école Epitech,
+                  je suis en reconversion professionnelle. En effet, avant cela
+                  j'étais coach et éducateur sportif. Je me lance donc dans une
+                  nouvelle aventure dans l'informatique. Je suis donc par
+                  conséquent un grand amateur de sport et de jeux vidéos.
+                </p>
+              </div>
+              <div class="parcours">
+                <h3>Parcours scolaire</h3>
+                <p>
+                  Mon parcours scolaire jusqu'au lycée est très classique, j'ai
+                  passé un Bac S que j'ia obtenu en 2013. Suite à cela je suis
+                  allé en fac de sport, STAPS, où j'ai obtenu ma licence en
+                  entrainement sportif. Enfin pour achever mes études j'ai passé
+                  un BPJEPS AF.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="competence size" id="competence">
+        <h2 class="title">competence</h2>
+        <div class="center">
+          <div class="bubble one"><div class="align">Html</div></div>
+          <div class="bubble two"><div class="align">CSS</div></div>
+          <div class="bubble three"><div class="align">Javascript</div></div>
+          <div class="bubble four"><div class="align">Python</div></div>
+          <div class="bubble six"><div class="align">Linux</div></div>
+          <div class="bubble five"><div class="align">React</div></div>
+          <div class="bubble seven"><div class="align">Pygame</div></div>
+          <div class="bubble eight"><div class="align">Materialize</div></div>
+        </div>
+      </div>
+      <div class="projet size" id="projet">
+        <h2 class="title">Projets</h2>
+        <div class="center">
+          <div class="flex">
+            <div class="block un"></div>
+            <div class="block deux"></div>
+            <div class="block trois"></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact size" id="contact">
+        <h2 class="title">Contact</h2>
+        <div class="center">
+          <div class="container">
+            <form action="">
+              <h2>Vos coordonnées</h2>
+              <div class="input-box">
+                <input type="text" required id="nom" />
+                <label for="nom">Nom</label>
+                <i></i>
+              </div>
+              <div class="input-box">
+                <input type="text" required id="prenom" />
+                <label for="prenom">Prenom</label>
+                <i></i>
+              </div>
+              <div class="input-box">
+                <input type="text" required id="email" />
+                <label for="prenom">Email</label>
+                <i></i>
+              </div>
+              <div class="input-box">
+                <input type="text" required id="message" />
+                <label for="message">Votre message</label>
+                <i></i>
+              </div>
+              <div class="links">
+                <a href="https://github.com/Arthur-Degois">Github</a>
+                <a href="https://www.linkedin.com/">Linkedin</a>
+              </div>
+              <div class="input-box">
+                <input
+                  type="submit"
+                  value="Envoyer"
+                  href="mailto: arthur.degois@epitech.eu"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="anim.js"></script>
+  </body>
+</html>
