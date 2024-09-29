@@ -274,19 +274,60 @@ nav {
     .flex {
       display: flex;
       gap: 50px;
-      .block {
+      .card-container {
         width: 20vw;
         aspect-ratio: 1/1.5;
         cursor: pointer;
+        border-radius: 10px;
+        .card {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          box-shadow: black 10px 5px 15px;
+          transition: transform 1s ease-in-out;
+          transform-style: preserve-3d;
+          border-radius: 30px;
+          cursor: pointer;
+          .side {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 30px;
+          }
+          .recto {
+            z-index: 2;
+          }
+          .verso {
+            transform: rotateY(180deg);
+            background: linear-gradient(
+              90deg,
+              rgb(10, 138, 138) 20%,
+              blue 60%,
+              black 100%
+            );
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            p {
+              color: var(--color-text);
+              font-size: 1.2rem;
+            }
+          }
+        }
+        .rotate {
+          transform: rotateY(180deg);
+        }
       }
       .un {
-        background: url(./img/field-landscape.jpg) center/cover;
+        background: url(./img/Snake.jpg) center/cover;
       }
       .deux {
-        background: url(./img/lake-volcanic-crater.jpg) center/cover;
+        background: url(./img/flappy.jpg) center/cover;
       }
       .trois {
-        background: url(./img/outside-nature.jpg) center/cover;
+        background: url(./img/pacman.jpg) center/cover;
       }
     }
   }
@@ -547,6 +588,22 @@ nav {
         flex-direction: column;
         .block {
           width: 35vw;
+        }
+      }
+    }
+  }
+  .projet {
+    .center {
+      .flex {
+        .card-container {
+          width: 200px;
+          .card {
+            .verso {
+              p {
+                font-size: 1rem;
+              }
+            }
+          }
         }
       }
     }

@@ -127,9 +127,30 @@
         <h2 class="title">Projets</h2>
         <div class="center">
           <div class="flex">
-            <div class="block un"></div>
-            <div class="block deux"></div>
-            <div class="block trois"></div>
+            <div class="card-container">
+              <div class="card">
+                  <div class="side un recto"></div>
+                  <div class="side verso">
+                    <p>La base du jeux vidéos, qui n'a jamais jouer a snake sur sa TI-82</p>
+                  </div>
+              </div>
+          </div>
+            <div class="card-container">
+              <div class="card">
+                  <div class="side deux recto"></div>
+                  <div class="side verso">
+                    <p>Un classique parti trop tôt, le jeu le plus divertissant des amphis, tu nous manques.</p>
+                  </div>
+              </div>
+          </div>
+            <div class="card-container">
+              <div class="card">
+                  <div class="side trois recto"></div>
+                  <div class="side verso">
+                    <p>Un dernier indemmodable, l'ancêtre du jeux vidéos et pourtant toujours autant apprécier</p>
+                  </div>
+              </div>
+          </div>
           </div>
         </div>
       </div>
@@ -160,14 +181,14 @@
                 <i></i>
               </div>
               <div class="links">
-                <a href="https://github.com/Arthur-Degois">Github</a>
-                <a href="https://www.linkedin.com/">Linkedin</a>
+                <a href="https://github.com/Arthur-Degois" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
               </div>
               <div class="input-box">
                 <input
                   type="submit"
                   value="Envoyer"
-                  href="mailto: arthur.degois@epitech.eu"
+                  onclick="sendEmail()"
                 />
               </div>
             </form>

@@ -22,3 +22,24 @@ function lines() {
 setInterval( () => {
     lines()
 },200);
+
+
+// js pour envoyer un email
+function sendEmail() {
+    let userPrenom = prenom.value;
+    let userNom = nom.value;
+    let userEmail = email.value;
+    let userMessage = message.value;
+    let mailToLink = "mailto:arthur.degois@epitech.eu"+ "?subject=" + encodeURIComponent( userNom+ " " +userPrenom) + "&body=" + encodeURIComponent(userMessage + "\n\n" + userEmail);
+
+    window.location.href = mailToLink;
+}
+
+
+// faire tourner les cartes du projet
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card) => {
+    card.addEventListener("click",(e) => {
+        card.classList.toggle("rotate")
+    })})
